@@ -1,0 +1,98 @@
+OLIST E-COMMERCE SQL ANALYTICS
+FINAL GITHUB DIRECTORY
+
+ECommerce-Olist-SQL-Analytics/
+│
+├── README.md
+├── .gitignore
+│
+├── data/
+│   ├── raw/
+│   │   ├── olist_customers_dataset.csv
+│   │   ├── olist_orders_dataset.csv
+│   │   ├── olist_order_items_dataset.csv
+│   │   ├── olist_order_payments_dataset.csv
+│   │   ├── olist_order_reviews_dataset.csv
+│   │   ├── olist_products_dataset.csv
+│   │   ├── olist_sellers_dataset.csv
+│   │   ├── olist_geolocation_dataset.csv
+│   │   └── product_category_name_translation.csv
+│   │
+│   └── data_quality_checks.sql
+│
+├── database/
+│   ├── 01_create_database.sql
+│   ├── 02_create_tables.sql
+│   └── 03_constraints.sql
+│
+├── analysis/
+│   ├── 01_sales_analysis.sql
+│   ├── 02_customer_analysis.sql
+│   ├── 03_customer_segmentation.sql
+│   ├── 04_advanced_sql_analysis.sql
+│   ├── 05_product_analysis.sql
+│   ├── 06_seller_analysis.sql
+│   ├── 07_review_analysis.sql
+│   ├── 08_delivery_analysis.sql
+│   └── 09_geographic_analysis.sql
+│
+├── views/
+│   ├── vw_customer_metrics.sql
+│   ├── vw_product_performance.sql
+│   ├── vw_seller_performance.sql
+│   └── vw_monthly_sales.sql
+│
+├── procedures/
+│   ├── sp_customer_report.sql
+│   ├── sp_sales_summary.sql
+│   └── sp_product_report.sql
+│
+├── functions/
+│   └── [only useful SQL functions]
+│
+├── performance/
+│   └── indexing_analysis.sql
+│
+└── documentation/
+    ├── data_dictionary.md
+    ├── data_profiling.md
+    ├── data_quality_notes.md
+    ├── business_questions.md
+    ├── analysis_notes.md
+    └── er_diagram.png
+
+
+PRIMARY OWNERSHIP
+
+SHUBHAM
+- database/
+- analysis/01_sales_analysis.sql
+- analysis/02_customer_analysis.sql
+- analysis/03_customer_segmentation.sql
+- analysis/04_advanced_sql_analysis.sql
+- views/
+- procedures/
+- functions/
+- performance/
+
+FRIEND
+- data/data_quality_checks.sql
+- analysis/05_product_analysis.sql
+- analysis/06_seller_analysis.sql
+- analysis/07_review_analysis.sql
+- analysis/08_delivery_analysis.sql
+- analysis/09_geographic_analysis.sql
+- documentation/
+
+SHARED
+- README.md
+- database design approval
+- business_questions.md
+- final testing
+- code review
+- Pull Requests
+
+IMPORTANT:
+Keep raw Olist files unchanged.
+Do not create artificial returns/promotions tables.
+If Olist does not contain data needed for an analysis, document the limitation.

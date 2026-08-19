@@ -1,0 +1,235 @@
+OLIST E-COMMERCE SQL ANALYTICS PROJECT
+ROADMAP — FRIEND
+Dataset: Brazilian E-Commerce Public Dataset by Olist
+
+PROJECT DIRECTION
+Use the real Olist dataset and analyze only business areas supported by it.
+Focus on data profiling, quality, products, categories, sellers, reviews,
+delivery/logistics, geography, business insights and documentation.
+
+Do NOT invent returns, promotions, profit, or unsupported fields.
+
+==================================================
+YOUR MAIN RESPONSIBILITY
+==================================================
+1. Data profiling
+2. Data-quality validation
+3. Product analytics
+4. Category analytics
+5. Seller analytics
+6. Review analytics
+7. Delivery/logistics analytics
+8. Geographic analytics
+9. Business interpretation
+10. Documentation
+11. Customer-analysis validation
+12. GitHub Pull Requests/reviews
+
+==================================================
+PHASE 1 — SOURCE DATA
+==================================================
+- Download Olist.
+- Keep original files unchanged.
+- Store them under data/raw/.
+- Verify all expected files exist.
+
+==================================================
+PHASE 2 — DATA PROFILING
+==================================================
+For every source file identify:
+- Row count
+- Columns
+- Identifiers
+- Missing values
+- Duplicates
+- Date ranges
+- Numeric ranges
+- Categories
+- Relationship keys
+
+Deliverable:
+documentation/data_profiling.md
+
+==================================================
+PHASE 3 — RELATIONSHIP VALIDATION
+==================================================
+Work with Shubham to validate:
+- Customers → Orders
+- Orders → Order items
+- Orders → Payments
+- Orders → Reviews
+- Order items → Products
+- Order items → Sellers
+- Customers → Geography
+- Products → Categories
+
+Identify orphan records and unexpected duplicates.
+
+==================================================
+PHASE 4 — DATA QUALITY
+==================================================
+Check:
+- Duplicate identifiers
+- Missing required values
+- Invalid dates
+- Invalid quantities/prices
+- Invalid relationships
+- Inconsistent statuses
+- Reviews without valid orders
+- Items without valid products/sellers
+
+Deliverables:
+data/data_quality_checks.sql
+documentation/data_quality_notes.md
+
+==================================================
+PHASE 5 — PRODUCT + CATEGORY ANALYTICS
+==================================================
+Analyze:
+- Best-selling products
+- Revenue by product
+- Units sold
+- Product rankings
+- Category performance
+- Category contribution
+- Low-performing products
+- Sales over time
+
+Deliverable:
+analysis/05_product_analysis.sql
+
+==================================================
+PHASE 6 — SELLER ANALYTICS
+==================================================
+Analyze:
+- Seller count
+- Seller sales value
+- Seller ranking
+- Items/orders handled
+- Seller location
+- Seller product/category distribution
+- Delivery performance where supported
+
+Deliverable:
+analysis/06_seller_analysis.sql
+
+==================================================
+PHASE 7 — REVIEW ANALYTICS
+==================================================
+Analyze:
+- Average review score
+- Review distribution
+- Ratings by category
+- Ratings by product
+- Low-rated products
+- High-sales/low-rating products
+- High-sales/high-rating products
+- Review timing
+
+Deliverable:
+analysis/07_review_analysis.sql
+
+==================================================
+PHASE 8 — DELIVERY ANALYTICS
+==================================================
+Use the available order timestamps to study:
+- Delivery duration
+- Estimated vs actual delivery
+- Late deliveries
+- Delivery performance over time
+- Delivery by state
+- Delivery by seller
+- Delivery vs review score
+
+Clearly define each metric.
+
+Deliverable:
+analysis/08_delivery_analysis.sql
+
+==================================================
+PHASE 9 — GEOGRAPHIC ANALYTICS
+==================================================
+Analyze:
+- Orders by state
+- Sales by state
+- Customer distribution
+- Seller distribution
+- Delivery performance by state
+- Review performance by state
+
+Deliverable:
+analysis/09_geographic_analysis.sql
+
+==================================================
+PHASE 10 — CUSTOMER VALIDATION
+==================================================
+Review Shubham's:
+- Customer spending
+- Order counts
+- Repeat customers
+- Customer rankings
+- RFM
+- Cohorts
+
+Look for duplicate counting, incorrect joins and payment aggregation issues.
+
+==================================================
+PHASE 11 — BUSINESS INSIGHTS
+==================================================
+Document findings supported by the data, such as:
+- Leading categories
+- Top sellers
+- Strongest states
+- High-sales/low-rating products
+- Delivery/review relationships
+- Valuable customer segments
+
+Deliverable:
+documentation/analysis_notes.md
+
+==================================================
+PHASE 12 — GITHUB
+==================================================
+Use feature branches:
+- feature/product-analysis
+- feature/seller-analysis
+- feature/review-analysis
+- feature/delivery-analysis
+- feature/geographic-analysis
+- feature/data-quality
+
+Workflow:
+Branch → work → test → commit → push → Pull Request → review → merge.
+
+Do not directly modify main.
+
+==================================================
+SHARED WORK
+==================================================
+Both:
+- Review database design
+- Review SQL
+- Validate customer analysis
+- Maintain README
+- Final testing
+- Code review
+
+==================================================
+FINAL FLOW
+==================================================
+Olist Data
+→ Profiling
+→ Data Quality
+→ Relational Model
+→ Sales/Customer Analysis
+→ Product Analysis
+→ Seller Analysis
+→ Review Analysis
+→ Delivery Analysis
+→ Geographic Analysis
+→ Advanced SQL
+→ Business Insights
+→ GitHub
+
+A smaller accurate project is better than adding fictional data just to make
+the repository look bigger.
