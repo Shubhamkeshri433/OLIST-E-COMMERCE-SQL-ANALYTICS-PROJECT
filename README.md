@@ -45,13 +45,3 @@ The current phase focuses on **Data Profiling and Data Quality Validation**, inc
 * Data type validation
 * Invalid value detection
 * Date consistency checks
-
-## 🚀 Future Analysis
-
-Further analysis will focus on customer behavior, sales performance, product categories, seller performance, payment methods, delivery performance, and customer reviews.
-
-## 👨‍💻 Author
-
-**Rishabh Kesari**
-Aspiring Data Analyst | SQL | Python | Data Analysis
-
